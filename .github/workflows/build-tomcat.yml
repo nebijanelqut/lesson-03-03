@@ -29,7 +29,7 @@ jobs:
           java -version
 
     - name: Copy tomcat-users.xml into Tomcat configuration directory
-      run: cp -v tomcat-users.xml ./tomcat/conf/tomcat-users.xml
+      run: cp -v tomcat-users.xml ./tomcat/conf/
 
     - name: Compile Tomcat
       run: |
