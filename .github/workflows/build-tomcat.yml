@@ -28,9 +28,6 @@ jobs:
           ls -ltr
           java -version
 
-    - name: Create tomcat directory
-      run: mkdir -p /tomcat/conf
-
     - name: Copy tomcat-users.xml into Tomcat configuration directory
       run: cp -v tomcat-users.xml ./tomcat/conf/tomcat-users.xml
 
